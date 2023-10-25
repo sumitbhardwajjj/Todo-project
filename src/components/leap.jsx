@@ -36,6 +36,7 @@ const Leap = () => {
 
   return (
     <div className="container">
+    
       <form onSubmit={handleSubmit} className="form">
         <div className="form-2">
           <input
@@ -46,9 +47,12 @@ const Leap = () => {
           />
           <button type="submit">Enter</button>
         </div>
-        <Remove />
+     
       </form>
-      <form onSubmit={handleForm} className="form">
+      <Remove />
+    
+    
+     <form onSubmit={handleForm} className="form">
         <div className="form-2">
           <input
             value={input}
@@ -58,9 +62,11 @@ const Leap = () => {
           />
           <button type="submit">Enter</button>
         </div>
-        <Todo />
+     
       </form>
-    </div>
+      <Todo />
+     </div>
+  
   );
 };
 
